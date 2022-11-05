@@ -8,6 +8,19 @@
 	"item": [
 		{
 			"name": "GET_booking",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -40,11 +53,24 @@
 		},
 		{
 			"name": "GET_booking_ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://restful-booker.herokuapp.com/booking/4108",
+					"raw": "https://restful-booker.herokuapp.com/booking/1228",
 					"protocol": "https",
 					"host": [
 						"restful-booker",
@@ -53,7 +79,7 @@
 					],
 					"path": [
 						"booking",
-						"4108"
+						"1228"
 					]
 				}
 			},
@@ -61,6 +87,19 @@
 		},
 		{
 			"name": "POST_booking",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -119,6 +158,19 @@
 		},
 		{
 			"name": "PUT_booking_ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "PUT",
 				"header": [
@@ -132,15 +184,15 @@
 					},
 					{
 						"key": "Cookie",
-						"value": "token=444faa03ec795d9"
+						"value": "token=a740f908d4a6b81"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"firstname\" : \"Chuleeporn A\",\n    \"lastname\" : \"Kaewchan\",\n    \"totalprice\" : 2154,\n    \"depositpaid\" : false,\n    \"bookingdates\" : {\n        \"checkin\" : \"2020-10-05\",\n        \"checkout\" : \"2020-10-30\"\n    },\n    \"additionalneeds\" : \"Video games / sports\"\n}"
+					"raw": "{\n    \"firstname\" : \"Chuleeporn\",\n    \"lastname\" : \"Kaewchan\",\n    \"totalprice\" : 2154,\n    \"depositpaid\" : false,\n    \"bookingdates\" : {\n        \"checkin\" : \"2020-10-05\",\n        \"checkout\" : \"2020-10-30\"\n    },\n    \"additionalneeds\" : \"Video games / sports\"\n}"
 				},
 				"url": {
-					"raw": "https://restful-booker.herokuapp.com/booking/3768",
+					"raw": "https://restful-booker.herokuapp.com/booking/1228",
 					"protocol": "https",
 					"host": [
 						"restful-booker",
@@ -149,7 +201,7 @@
 					],
 					"path": [
 						"booking",
-						"3768"
+						"1228"
 					]
 				}
 			},
@@ -157,6 +209,19 @@
 		},
 		{
 			"name": "DELETE_booking",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "DELETE",
 				"header": [
@@ -166,11 +231,11 @@
 					},
 					{
 						"key": "Cookie",
-						"value": "token=444faa03ec795d9"
+						"value": "token=a740f908d4a6b81"
 					}
 				],
 				"url": {
-					"raw": "https://restful-booker.herokuapp.com/booking/3768",
+					"raw": "https://restful-booker.herokuapp.com/booking/1228",
 					"protocol": "https",
 					"host": [
 						"restful-booker",
@@ -179,7 +244,7 @@
 					],
 					"path": [
 						"booking",
-						"3768"
+						"1228"
 					]
 				}
 			},
